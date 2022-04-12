@@ -20,6 +20,10 @@
                    class="navbar-item {{ Request::route()->getName() === 'posts.index' ? "is-active" : "" }}">
                     News
                 </a>
+                <a href="{{ route('foos.index') }}"
+                   class="navbar-item {{ Request::route()->getName() === 'foos.index' ? "is-active" : "" }}">
+                    Foos
+                </a>
             </div>
         </div>
     </div>

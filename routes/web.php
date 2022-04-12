@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FooController;
 use App\Models\Post;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
@@ -24,3 +25,4 @@ Route::get('/', function () {
 
 // Resource routes of the base pages. For more info on Resource Routes
 Route::resource('/posts', PostController::class);
+Route::resource('/foos', FooController::class);
