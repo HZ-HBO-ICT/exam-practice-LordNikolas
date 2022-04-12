@@ -15,7 +15,7 @@
                 <div class="column is-8-desktop is-12-tablet">
 
                     <div class="content">
-                        <h1>Welcome to the HZ website.</h1>
+                        <h1>Welcome to the HZ website</h1>
                         <p>
                             Posuere porttitor natoque velit duis penatibus fermentum dignissim ut? Vel vel mi purus
                             tempor nec conubia platea venenatis. Mauris pharetra auctor magnis, vehicula integer risus

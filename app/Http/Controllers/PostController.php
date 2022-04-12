@@ -15,9 +15,9 @@ class PostController extends Controller
     public function index()
     {
         // Get all the posts ordered by published date
-        $blog = Post::orderBy('published_at', 'desc')->get();
+        $posts = Post::orderBy('published_at', 'desc')->get();
 
-        return view('posts.index', compact('blog'));
+        return view('posts.index', compact('posts'));
     }
 
     /**
