@@ -21,6 +21,11 @@
                         <p>Published at: {{ $post->published_at }}</p>
 
                         {!! $post->body !!}
+
+                        @foreach($post->foos as $foo)
+                            <p>Thus: {{$foo->thud}}</p>
+                            <p>Wombat: {{$foo->wombat ? true : false}}</p>
+                        @endforeach
                     </div>
 
                 </div>

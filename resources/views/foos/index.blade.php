@@ -4,7 +4,7 @@
     <section class="hero  is-medium  is-bold is-primary">
         <div class="hero-body">
             <div class="container">
-                <p class="title is-2">News</p>
+                <p class="title is-2">Foos</p>
                 <p class="subtitle is-3">The latest foos on the HZ</p>
 
             </div>
@@ -23,8 +23,8 @@
 
                         <div class="column is-12">
                             @foreach($foos as $foo)
-                                <div class="panel">
-                                    <a class="panel-block" href="{{ route('foos.show', $foo) }}">
+                                <div class="panel" style = "{{$foo->wombat ? 'background-color: lightblue' : ''}}">
+                                <a class="panel-block" href="{{ route('foos.show', $foo) }}">
                                         <article class="media">
                                             <figure class="media-left">
                                             </figure>
@@ -32,10 +32,14 @@
                                                 <div class="content">
                                                     <p>
                                                         <strong>{{ $foo->name }}</strong>
+                                                        <br>
                                                         <small>{{ $foo->thud }}</small>
+                                                        <br>
                                                         <small>{{ $foo->kazaam }}</small>
                                                         <br>
                                                         {{ $foo->wombat }}
+                                                        <br>
+                                                        <strong>{{$foo->post->title}}</strong>
                                                     </p>
                                                     <div class="field has-addons">
                                                         <p class="control">

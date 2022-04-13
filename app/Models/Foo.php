@@ -19,6 +19,6 @@ class Foo extends Model
         }
     }
     public function post() {
-        return $this->belongsTo(Post::class, 'skwal');
+        return $this->belongsTo(Post::class, 'amogus');
     }
 }

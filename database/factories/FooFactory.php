@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class FooFactory extends Factory
@@ -16,7 +17,8 @@ class FooFactory extends Factory
         return [
             'name'=>$this->faker->name(),
             'thud'=>$this->faker->numberBetween(0,50),
-            'wombat'=>$this->faker->boolean()
+            'wombat'=>$this->faker->boolean(),
+            'amogus'=>Post::all()->random()->id
         ];
     }
 }
